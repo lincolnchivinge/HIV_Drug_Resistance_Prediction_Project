@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<body>
+    <h3>Bongani Machine Learning Prediction Input Form</h3>
+    
+<div class = "login">
+  <h4>Enter the following factors to predict the Drug Resistance Label</h4>
+  <!-- Main Input for receiving Query to the ML..... --> 
+  <form action="/result" method = "POST">
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age">
+    <br>
+
+	<label for="age_at_debut">Age at Debut</label>
+    <input type="text" id="age_at_debut" name="age_at_debut">
+	<br>
+	
+	
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+    </select>
+    <br>
+	
+    <label for="education">Education Level</label>
+    <select id="education" name="education">
+      <option value="1">Primary</option>
+      <option value="2">Secondary</option>
+	  <option value="3">Tertiary</option>
+    </select>
+    <br>
+	
+	<label for="occupation">Occupation</label>
+    <select id="occupation" name="occupation">
+      <option value="1">Employed</option>
+      <option value="2">Self-Employed</option>
+	  <option value="3">Unemployed</option>
+    </select>
+    <br>
+	
+	<label for="marital_status">Marital Status</label>
+    <select id="marital_status" name="marital_status">
+      <option value="1">Cohabiting</option>
+      <option value="2">Divorced</option>
+	  <option value="3">Married</option>
+	  <option value="4">Not Married</option>
+    </select>
+    <br>
+	
+	<label for="resindence">Residence</label>
+    <select id="residence" name="residence">
+      <option value="1">Rural</option>
+      <option value="2">Urban</option>
+    </select>
+    <br>
+	
+	<label for="vload">Viral Load</label>
+    <input type="vload" id="vload" name="vload">
+    <br>
+	
+	<label for="cd4_cell_count">CD4 Cell Count</label>
+    <input type="cd4_cell_count" id="cd4_cell_count" name="cd4_cell_count">
+    <br>
+	
+	<label for="condoms">Use of Condoms</label>
+    <select id="condoms" name="condoms">
+      <option value="1">No</option>
+      <option value="2">Sometimes</option>
+	  <option value="3">Yes</option>
+    </select>
+    <br>
+
+    <label for="sti">Presence of STIs</label>
+    <select id="sti" name="sti">
+      <option value="1">No</option>
+      <option value="2">Yes</option>
+    </select>
+    <br>
+	
+	<label for="sex_partners">Number of Sex Partners</label>
+    <input type="sex_partners" id="sex_partners" name="sex_partners">
+    <br>
+	
+	<label for="art_history">ART History</label>
+    <select id="art_history" name="art_history">
+      <option value="1">ART Naïve</option>
+      <option value="2">Prior ART-exposed participants</option>
+    </select>
+    <br>
+	
+	<label for="duration">Duration in days between HIV diagnosis and enrolment</label>
+    <input type="duration" id="duration" name="duration">
+    <br>
+	
+	<label for="duration_infection">ART History</label>
+    <select id="duration_infection" name="duration_infection">
+      <option value="1">Greater than 24</option>
+      <option value="2">Less or equal to 24</option>
+	  <option value="3">Unknown</option>
+    </select>
+    <br>
+	
+	<label for="chronic">Chronic Illness</label>
+    <select id="chronic" name="chronic">
+      <option value="1">No</option>
+      <option value="2">Yes</option>
+    </select>
+    <br>
+	
+	<label for="nnrti">NNRTI Mutations</label>
+    <select id="nnrti" name="nnrti">
+      <option value="1">No</option>
+      <option value="2">Yes</option>
+    </select>
+    <br>
+	
+	<label for="nrti">NRTI Mutations</label>
+    <select id="nrti" name="nrti">
+      <option value="1">No</option>
+      <option value="2">Yes</option>
+    </select>
+    <br>
+	
+	<label for="pi">PI Mutations</label>
+    <select id="pi" name="pi">
+      <option value="1">No</option>
+      <option value="2">Yes</option>
+    </select>
+    <br>
+		
+    <button type="submit" class = "btn"> submit for prediction </button> 
+  </form>
+</div>
+</body>
+</html>
